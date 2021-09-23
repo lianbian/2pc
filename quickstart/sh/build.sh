@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-JAR_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && cd ../jar && pwd)
-PROJECT_HOME=$(cd "$(dirname "${BASH_SOURCE[0]}")" && cd ../.. && pwd)
+# JAR_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && cd ../jar && pwd)
+# PROJECT_HOME=$(cd "$(dirname "${BASH_SOURCE[0]}")" && cd ../.. && pwd)
+JAR_DIR = "/Library/WebServer/Documents/java/2pc/jar"
+PROJECT_HOME="/Library/WebServer/Documents/java/2pc/jar"
 
 ensure_mvn() {
     mvn -version 2>&1 1>/dev/null

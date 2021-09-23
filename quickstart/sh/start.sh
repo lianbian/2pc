@@ -3,8 +3,10 @@
 script_name=$0
 command=$1
 
-JAR_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && cd ../jar && pwd)
-LOG_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && cd .. && pwd)/log
+# JAR_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && cd ../jar && pwd)
+JAR_DIR = "/Library/WebServer/Documents/java/2pc/jar"
+# LOG_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && cd .. && pwd)/log
+LOG_DIR="/Library/WebServer/Documents/java/2pc/log"
 
 BOC_JAR=$JAR_DIR/boc-server-1.0-SNAPSHOT.jar
 CBRC_JAR=$JAR_DIR/cbrc-server-1.0-SNAPSHOT.jar
