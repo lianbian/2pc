@@ -36,7 +36,9 @@ public class ClientMain {
             System.exit(1);
         }
 
+        // 初始化
         init();
+
         final String fromBank = args[0];
         final String fromAccount = args[1];
         final String toBank = args[2];
@@ -78,11 +80,11 @@ public class ClientMain {
     }
 
     private static void init() {
-        final List<Node> testNodes = TestUtil.getTestNodes();bankNames.add("BOC");
+        final List<Node> testNodes = TestUtil.getTestNodes();
+        bankNames.add("BOC");
         bankNames.add("CCB");
         for (Node testNode : testNodes) {
             participants.put(testNode.name(), testNode);
         }
     }
-
 }

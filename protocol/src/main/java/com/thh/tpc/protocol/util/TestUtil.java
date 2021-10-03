@@ -33,7 +33,6 @@ public class TestUtil {
         try {
             bocNode = new NodeImpl("BOC", new URL("http", "127.0.0.1", 8001, "/api"));
             ccbNode = new NodeImpl("CCB", new URL("http", "127.0.0.1", 8002, "/api"));
-            cbrcNode = new NodeImpl("CBRC", new URL("http", "127.0.0.1", 8003, "/api"));
             testNodes = Arrays.asList(bocNode, ccbNode, cbrcNode);
             coordinatorNode = new NodeImpl("transactionManager", new URL("http", "127.0.0.1", 8000, "/api"));
         } catch (Exception e) {
